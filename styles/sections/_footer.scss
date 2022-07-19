@@ -1,0 +1,167 @@
+.footer {
+    padding: 91px 0 0;
+    background-color: #222;
+    color: #fff;
+}
+.footer__container {
+    max-width: $maxContainerWidth;
+    margin: 0 auto;
+    padding-bottom: 58px;
+}
+.footer__grid {
+    display: grid;
+    grid-template-columns: 26.6% 22.5% 26.9% 23.9%;
+    grid-row-gap: 65px;
+}
+.footer__grid-item {
+    overflow: hidden;
+}
+.footer__title {
+    font-size: 21px;
+    color: #626262;
+}
+.footer__logo-icon {
+    width: 130px;
+    height: 54px;
+}
+.footer__links-list {
+    margin-top: 26px;
+    padding-right: 15px;
+    word-break: break-all;
+
+    li:nth-child(n+2) {
+        margin-top: 12px;
+    }
+}
+.footer__link {
+    position: relative;
+    line-height: 1.2;
+    color: #fff;
+}
+@media (min-width: 1024px) {
+    .footer__link {
+        &::after {
+            content: "";
+            display: block;
+            position: absolute;
+            bottom: 1px;
+            width: 0;
+            height: 1px;
+            background: #626262;
+            transition: 0.3s ease;
+        }
+
+        &:hover::after {
+            width: 100%;
+        }
+    }
+}
+.footer__resources {
+    grid-column: 3/5;
+}  
+.footer__resources-list {
+    margin-top: 26px;
+    max-width: 100%;
+}
+.footer__resources-item {
+    display: flex;
+    align-items: center;
+
+    img {
+        position: relative;
+        bottom: 1px;
+        width: 19px;
+        margin-right: 13px;
+    }
+}
+.footer__resources-item:nth-child(n+2) {
+    margin-top: 11px;
+}
+.footer__resources-item-txt {
+    line-height: 1.3;
+}
+.footer__address {
+    padding-top: 9px;
+}
+.footer__address-wrap {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 32px;
+}
+.footer__geo-icon {
+    width: 13px;
+    height: 18px;
+}
+.footer__address-text {
+    margin: 2px 0 0 15px;
+    max-width: 100%;
+    padding-right: 15px;
+    word-break: break-all;
+}
+.footer__address-text-item {
+    line-height: 1.1;
+}
+.footer__address-text-item:nth-child(n+2) {
+    margin-top: 17px;
+}
+.footer__contacts {
+    grid-column: 2/4;
+    padding-top: 9px;
+}
+.footer__contacts-wrap {
+    margin-top: 27px;
+    font-size: 30px;
+    padding-right: 12px;
+    word-break: break-all;
+}
+.footer__contacts-email {
+    display: inline-block;
+    margin-top: 27px;
+    padding-bottom: 4px;
+    border-bottom: 1px solid $red;
+}
+.footer__soc-nets {
+    display: flex;
+    justify-content: flex-end;
+}
+.footer__soc-net-item {
+    text-align: right;
+}
+.footer__soc-net-item:nth-child(n+2) {
+    margin-top: 10px;
+}
+.footer__soc-net-item:last-of-type .footer__soc-net-link {
+    border-bottom: none;
+}
+.footer__soc-net-link {
+    position: relative;
+    display: inline-block;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #444;
+    text-align: right;
+    color: #fff;
+}
+@media (min-width: 1024px) {
+    .footer__soc-net-link:hover,
+    .footer__soc-net-item:last-of-type .footer__soc-net-link:hover {
+        border-bottom: 1px solid $red;
+    }
+}
+.sub-footer {
+    border-top: 1px solid #393939;
+}
+.sub-footer__container {
+    position: relative;
+    width: 81.25%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    padding: 25px 0 27px;
+    color: #4e4e4e;
+    font-family: "Mr Eaves XLMod OT Book", sans-serif;
+    font-size: 18px;
+}
+.sub-footer__privacy {
+    position: absolute;
+    right: 0;
+}

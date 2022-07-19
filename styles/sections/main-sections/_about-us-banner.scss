@@ -1,0 +1,51 @@
+.about-us {
+    min-height: 401px;
+    display: flex;
+    align-items: center;
+    padding: 32px 0;
+    background: url("../images/backgrounds/about-us-banner.jpg") center center no-repeat;
+    background-size: cover;
+    color: #fff;
+}
+.about-us__container {
+    max-width: 83.22%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.about-us__text {
+    max-width: 54%;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 6;
+    max-height: 330px;
+    overflow: hidden;
+}
+.about-us__title {
+    line-height: 1.1;
+    font-size: 50px;
+    font-weight: 600;
+}
+.about-us__button button {
+    min-width: 215px;
+    padding: 14.5px 14px 12.5px;
+    font-size: 18px;
+}
+
+.about-us__text.animated-content {
+    opacity: 0;
+    transform: translate(-120px, 0);
+}
+.about-us__text.animated-content--active {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+.about-us__button.animated-content {
+    opacity: 0;
+    transform: translate(120px, 0);
+}
+.about-us__button.animated-content--active {
+    opacity: 1;
+    transform: translate(0, 0);
+}

@@ -1,0 +1,203 @@
+.pro-services {
+    padding: 110px 0 150px;
+}
+.pro-services__container {
+    max-width: $maxContainerWidth;
+    width: 100%;
+    margin: 0 auto;
+}
+.pro-services__title {
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 1.2;
+    text-align: center;
+}
+.pro-services__nav-bar  {
+    margin-top: 44px;
+    display: flex;
+    justify-content: center;
+}
+.pro-services__nav-list-wrap {
+    margin: auto;
+}
+.pro-services__nav-list {
+    display: flex;
+    align-items: center;
+    color: #ababab;
+    font-size: 18px;
+}
+.pro-services__nav-item {
+    cursor: pointer;
+
+    &:nth-child(n+2) {
+        margin-left: 45px;
+    }
+}
+.pro-services__nav-item--active {
+    color: #000;
+}
+.pro-services__underline-strip-wrap {
+    position: relative;
+    height: 3px;
+    margin: 7px auto 0;
+    overflow: visible;
+}
+.pro-services__underline-strip {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    min-height: 100%;
+    transition: left 0.15s;
+    background-color: $red;
+}
+.pro-services__photos {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 64px;
+    height: 860px;
+}
+.pro-services__gallery-wrap {
+    width: 46.79%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.pro-services__gallery {
+    display: grid;
+    grid-template-columns: 47.9% 47.9%;
+    grid-column-gap: 4.1%;
+    grid-row-gap: 30px;
+}
+.pro-services__gallery-item {
+    position: relative;
+    height: 385px;
+    overflow: hidden;
+    cursor: pointer;
+    color: #fff;
+}
+.pro-services__gallery-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    user-select: none;
+    pointer-events: none;
+}
+@keyframes fadeOut {
+    to { opacity: 1; }
+}
+.pro-services__gallery-img--fade {
+    opacity: 0;
+    animation-name: fadeOut;
+    animation-duration: 0.6s;
+}
+.pro-services__sub-info {
+    position: absolute;
+    display: block;
+    left: 25px;
+    bottom: 25px;
+    opacity: 0;
+    transition: 0.4s;
+}
+.pro-services__company-info {
+    display: inline-block;
+    padding: 8px 15.3px 7px;
+    max-width: 90%;
+    word-break: break-all;
+    border-radius: 3px;
+    background-color: $red;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 12px;
+    color: #fff;
+}
+.pro-services__check {
+    display: flex;
+    align-items: center;
+    margin-top: 11px;
+    text-shadow: 0 0 7px rgba(0, 0, 0, 0.75);
+
+    img {
+        width: 30px;
+        margin-left: 14px;
+    }
+}
+.pro-services__gallery-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 47.9%;
+        padding: 12px;
+        transition: 0.3s;
+        background-color: #f6f6f6;
+        cursor: pointer;
+
+        img {
+            width: 30px;
+            height: 16px;
+        }
+    
+        &:active {
+            box-shadow: inset 1px 1px 12px rgba(34, 34, 34, 0.35);
+        }
+    
+        @media (min-width: 1024px) {
+            &:hover {
+                background-color: #eaeaea;
+            }
+        }
+    }
+
+    button:first-child img {
+        transform: rotate(180deg);
+    }
+}
+.pro-services__selected-photo-wrap {
+    width: 51.28%;
+}
+.pro-services__selected-photo-buttons {
+    display: none;
+
+    button:first-child img {
+        transform: rotate(180deg);
+    }
+}
+.pro-services__selected-photo {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    pointer-events: none;
+    user-select: none;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+@media (min-width: 1024px) {
+    .pro-services__gallery-item:hover .pro-services__sub-info {
+        opacity: 1;
+    }
+}
+
+.pro-services__gallery-wrap.animated-content {
+    opacity: 0;
+    transform: translate(-190px, 0);
+}
+.pro-services__selected-photo-wrap.animated-content {
+    opacity: 0;
+    transform: translate(190px, 0);
+}
+.pro-services {
+    .animated-content--active {
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+}

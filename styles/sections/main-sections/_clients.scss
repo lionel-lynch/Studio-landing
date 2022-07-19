@@ -1,0 +1,129 @@
+.clients {
+    padding: 98px 0 141px;
+    background-color: #222;
+    color: #fff;
+}
+.clients__container {
+    max-width: $maxContainerWidth;
+    width: 100%;
+    margin: 0 auto;
+}
+.clients__header {
+    text-align: center;
+}
+.clients__title {
+    font-size: 50px;
+    font-weight: 600;
+}
+.clients__sub-title {
+    margin-top: 18px;
+    font-size: 18px;
+}
+.clients__reviews {
+    margin-top: 65px;
+    min-height: 530px;
+}
+.clients__loader {
+    display: none;
+    height: 70px;
+    width: 100%;
+    position: relative;
+}
+.clients__reviews--loading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .clients-slider,
+    .clients-slider__switch {
+        display: none;
+    }
+
+    .clients__loader {
+        display: block;
+    }
+}
+.clients-slide {
+    width: 490px;
+    margin-right: 44px;
+    user-select: none;
+}
+.clients-slide:last-of-type {
+    margin-right: 0;
+}
+.clients-slide__img {
+    height: 490px;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+.clients-slide__rating {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 27px;
+}
+.clients-slide__client-name {
+    position: relative;
+    top: 2px;
+    max-width: 68%;
+    overflow: hidden;
+    line-height: 1.2;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.clients-slide__stars {
+    font-size: 0px; // убираем отступы между картинками
+
+    img:nth-child(n+2) {
+        margin-left: 5px;
+    }
+}
+.clients-slide__comment {
+    position: relative;
+    padding: 42px 0 0 0;
+    min-height: 84px;
+    overflow: hidden;
+    background: url("../images/icons/common/quotes.svg") no-repeat 0 28px;
+}
+.clients-slide__comment-text {
+    width: 83%;
+    margin: 0 auto;
+    line-height: 1.78;
+    font-size: 18px;
+    font-style: italic;
+}
+.clients-slider__switch {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+.clients-slider__switch-item {
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    background: #cfcfcf;
+    cursor: pointer;
+}
+.clients-slider__switch-item--active {
+    border: 2px solid $red;
+    background-color: transparent;
+}
+.clients-slider__switch-item:nth-child(n+2) {
+    margin-left: 20px;
+}
+
+.clients {
+    .animated-content {
+        opacity: 0;
+        transform: translate(0, 80px);
+    }
+    
+    .animated-content--active {
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+}

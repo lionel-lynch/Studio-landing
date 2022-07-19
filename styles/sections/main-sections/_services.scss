@@ -1,0 +1,112 @@
+.services__container {
+    display: flex;
+    min-width: 100%;
+}
+
+.services__item {
+    width: 50%;
+    padding: 82px 20px 102px;
+}
+.services__item--individ {
+    background: #222222;
+    color: #fff;
+
+    .services__list-item {
+        border-bottom: 1px solid #4e4e4e; 
+    }
+    .services__list-item::before { 
+        color: #4e4e4e; 
+    }
+
+    .animated-content {
+        opacity: 0;
+        transform: translate(-150px, 0);
+    }
+    .animated-content--active {
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+}
+.services__item--companies {
+    background: #f6f6f6;
+    color: #000;
+
+    .services__list-item { 
+        border-bottom: 1px solid #cccccc; 
+    }
+    .services__list-item::before { 
+        color: #cccccc; 
+    }
+
+    .animated-content {
+        opacity: 0;
+        transform: translate(150px, 0);
+    }
+    .animated-content--active {
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+}
+.services__content {
+    max-width: 400px;
+    margin: auto;
+}
+.services__header {
+    text-align: center;
+}
+.services__icon {
+    max-height: 40px;
+}
+.services__title {
+    margin-top: 16px;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 1.2;
+    text-transform: uppercase;
+}
+.services__list-item {
+    position: relative;
+    padding: 0 5px 16px 52px;
+    font-size: 18px;
+    font-weight: 500;
+}
+.services__list-item::before {
+    position: absolute;
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 0.8;
+}
+.services__list-item:first-child::before  {
+    content: "1";
+    left: -25px;
+    bottom: -9.5px;
+}
+.services__list-item:nth-child(2)::before {
+    content: "2";
+    left: -30px;
+    bottom: -11px;
+}
+.services__list-item:nth-child(3)::before {
+    content: "3";
+    left: -30px;
+    bottom: -10px;
+}
+.services__list-item:nth-child(n+2) { 
+    margin-top: 60px; 
+}
+.services__list {
+    margin: 96px auto 0;
+    // в макете данный блок не совсем по центру, поэтому двигаем
+    position: relative;
+    left: 9px;
+}
+.services__see-more {
+    margin-top: 81px;
+    text-align: center;
+
+    button {
+        min-width: 215px;
+        padding: 14px 6px 13px;
+        font-size: 18px;
+    }
+}

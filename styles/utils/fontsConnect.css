@@ -1,0 +1,55 @@
+@font-face {
+    font-family: "Poppins";
+    font-weight: 300;
+    src: url("../../fonts/Poppins-Light/Poppins-Light.woff2") format("woff2"),
+         url("../../fonts/Poppins-Light/Poppins-Light.woff")  format("woff"),
+         url("../../fonts/Poppins-Light/Poppins-Light.ttf")   format("truetype");
+}
+
+@font-face {
+    font-family: "Poppins";
+    font-weight: 400;
+    src: url("../../fonts/Poppins-Regular/Poppins-Regular.woff2") format("woff2"),
+         url("../../fonts/Poppins-Regular/Poppins-Regular.woff")  format("woff"),
+         url("../../fonts/Poppins-Regular/Poppins-Regular.ttf")   format("truetype");
+}
+
+@font-face {
+    font-family: "Poppins";
+    font-weight: 500;
+    src: url("../../fonts/Poppins-Medium/Poppins-Medium.woff2") format("woff2"),
+         url("../../fonts/Poppins-Medium/Poppins-Medium.woff")  format("woff"),
+         url("../../fonts/Poppins-Medium/Poppins-Medium.ttf")   format("truetype");
+}
+
+@font-face {
+    font-family: "Poppins";
+    font-weight: 600;
+    src: url("../../fonts/Poppins-SemiBold/Poppins-SemiBold.woff2") format("woff2"),
+         url("../../fonts/Poppins-SemiBold/Poppins-SemiBold.woff")  format("woff"),
+         url("../../fonts/Poppins-SemiBold/Poppins-SemiBold.ttf")   format("truetype");
+}
+
+@font-face {
+    font-family: "Poppins";
+    font-weight: 700;
+    src: url("../../fonts/Poppins-Bold/Poppins-Bold.woff2") format("woff2"),
+         url("../../fonts/Poppins-Bold/Poppins-Bold.woff")  format("woff"),
+         url("../../fonts/Poppins-Bold/Poppins-Bold.ttf")   format("truetype");
+}
+
+@font-face {
+    font-family: "Tahu";
+    font-weight: 400;
+    src: url("../../fonts/Tahu/Tahu.woff2") format("woff2"),
+         url("../../fonts/Tahu/Tahu.woff")  format("woff"),
+         url("../../fonts/Tahu/Tahu.ttf")   format("truetype");
+}
+
+@font-face {
+    font-family: "Mr Eaves XLMod OT Book";
+    font-weight: 400;
+    src: url("../../fonts/Mr Eaves XLMod OT/MrEavesXLModOT-Reg.woff2") format("woff2"),
+         url("../../fonts/Mr Eaves XLMod OT/MrEavesXLModOT-Reg.woff")  format("woff"),
+         url("../../fonts/Mr Eaves XLMod OT/MrEavesXLModOT-Reg.ttf")   format("truetype");
+}

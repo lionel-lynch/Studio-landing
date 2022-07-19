@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Photo studio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+
+    <link href="styles/utils/reset.css" rel="stylesheet" />
+    <link href="styles/utils/fontsConnect.css" rel="stylesheet" />
+    <link rel="stylesheet" href="lib/swiper/swiper-bundle.min.css">
+    <link href="styles/main.css" rel="stylesheet"/>
+
+    <link rel="shortcut icon" href="images/icons/favicon.svg"/>
+</head>
+<body>
+
+    <div class="wrapper">
+
+        <div class="header-wrap">
+            <header class="header">
+                <div class="header__container">
+
+                    <div class="header__main">
+                        <div class="header__logo">
+                            <img src="images/logos/main-logo.png" alt="main logo"/>
+                        </div>
+
+                        <nav class="header__nav">
+                            <ul class="header__nav-list">
+                                <li class="header__nav-item" data-nav="individSessions">Individuals</li>
+                                <li class="header__nav-item" data-nav="companiesSessions">Companies</li>
+                                <li class="header__nav-item" data-nav="studiosLocations">The Studio</li>
+                                <li class="header__nav-item" data-nav="clients">About Us</li>
+                                <li class="header__nav-item" data-nav="blog">Blog</li>
+                            </ul>
+                        </nav>
+
+                        <button class="header__burger-button">
+                            <div class="header__burger-button-strip"></div>
+                            <div class="header__burger-button-strip"></div>
+                            <div class="header__burger-button-strip"></div>
+                        </button>
+                    </div>
+
+                    <div class="header__links">
+                        <div class="header__book-button">
+                            <button class="site-button">Book Now</button>
+                        </div>
+
+                        <div class="header__socials">
+
+                            <ul class="header__socials-list">
+                                <li class="header__social">
+                                    <a href="#">
+                                        <img 
+                                            class="header__social-icon"
+                                            src="images/icons/common/facebook.svg" 
+                                            alt="facebook icon" 
+                                        />
+                                    </a>
+                                </li>
+
+                                <li class="header__social">
+                                    <a href="#">
+                                        <img
+                                            class="header__social-icon"
+                                            src="images/icons/common/instagram.svg" 
+                                            alt="instagram icon" 
+                                        />
+                                    </a>
+                                </li>
+
+                                <li class="header__social">
+                                    <a href="#">
+                                        <img
+                                            class="header__social-icon"
+                                            src="images/icons/common/linkedin.svg" 
+                                            alt="linkedin icon" 
+                                        />
+                                    </a>
+                                </li>
+
+                                <li class="header__social">
+                                    <a href="#">
+                                        <img
+                                            class="header__social-icon"
+                                            src="images/icons/common/yelp.svg" 
+                                            alt="yelp icon" 
+                                        />
+                                    </a>
+                                </li>
+
+                                <li class="header__social">
+                                    <a href="#">
+                                        <img
+                                            class="header__social-icon"
+                                            src="images/icons/common/google.svg" 
+                                            alt="google icon" 
+                                        />
+                                    </a>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+
+                </div>
+            </header>
+
+            <section class="header-banner">
+                <div class="header-banner__container">
+                    <h1 class="header-banner__title">Fast. Simple. <br> Professional <br> Headshots.</h1>
+
+                    <div class="header-banner__sub-info">#1 Rated Headshot Photographers.</div>
+
+                    <div class="header-banner__browse-button">
+                        <button class="site-button">Browse Sessions</button>
+                    </div>
+                </div>
+
+                <div class="header-banner__bg">
+                    <img src="images/backgrounds/header-banner.jpg" alt="header banner background image" />
+                </div>
+            </section>
+        </div>
+
+        <main>
+            <section class="services">
+                <div class="services__container">
+
+                    <div class="services__item services__item--individ">
+                        <div class="services__content">
+                            <div class="services__header animated-content">
+                                <img
+                                    class="services__icon"
+                                    src="images/icons/common/individual.svg" 
+                                    alt="person icon"
+                                />
+
+                                <h2 class="services__title">Individual Sessions</h2>
+                            </div>
+
+                            <ul class="services__list">
+                                <li class="services__list-item animated-content">
+                                    Studio Sessions
+                                </li>
+
+                                <li class="services__list-item animated-content">
+                                    Outdoor Sessions
+                                </li>
+
+                                <li class="services__list-item animated-content">
+                                    In-Office Sessions
+                                </li>
+                            </ul>
+
+                            <div class="services__see-more">
+                                <button class="site-button animated-content">
+                                    See More
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="services__item services__item--companies">
+                        <div class="services__content">
+                            <div class="services__header animated-content">
+                                <img
+                                    class="services__icon"
+                                    src="images/icons/common/companies.svg" 
+                                    alt="group of persons icon"
+                                />
+                                
+                                <h2 class="services__title">Companies Sessions</h2>
+                            </div>
+
+                            <ul class="services__list">
+                                <li class="services__list-item animated-content">
+                                    Group On-Sites
+                                </li>
+
+                                <li class="services__list-item animated-content">
+                                    Corporate Accounts
+                                </li>
+                            </ul>
+
+                            <div class="services__see-more">
+                                <button class="site-button animated-content">
+                                    See More
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <section class="locations">
+                <div class="locations__map">
+                    <div id="studiosMap"></div>
+                </div>
+
+                <div class="locations__container">
+                    <div class="locations__studio-search studio-search animated-content">
+                        <h2 class="studio-search__title">Studio Near Me</h2>
+
+                        <p class="studio-search__tip">Search for your professional by zip code:</p>
+
+                        <div class="studio-search__search">
+                            <input type="text" name="location" class="studio-search__location-input"/>
+
+                            <button class="studio-search__submit-button site-button">
+                                Search
+                            </button>
+
+                            <div class="studio-search__dropdown studio-search__dropdown--hidden">
+                                <ul class="studio-search__dropdown-list">
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="pro-services">
+                <div class="pro-services__container">
+                    <h2 class="pro-services__title">
+                        Our professional services
+                    </h2>
+
+                    <div class="pro-services__nav-bar">
+                        <div class="pro-services__nav-list-wrap">
+                            <ul class="pro-services__nav-list">
+                            </ul>
+                            
+                            <div class="pro-services__underline-strip-wrap">
+                                <div class="pro-services__underline-strip"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pro-services__photos">
+                        <div class="pro-services__gallery-wrap animated-content">
+
+                            <div class="pro-services__gallery">
+                                <div class="pro-services__gallery-item">
+                                    <img
+                                        class="pro-services__gallery-img"
+                                        src="" 
+                                        alt="our work"
+                                    />
+    
+                                    <div class="pro-services__sub-info">
+                                        <div class="pro-services__company-info">Company</div>
+
+                                        <div class="pro-services__check">
+                                            <span>Check Service</span>
+                                            <img src="images/icons/common/white-arrow.svg" alt="arrow right" />
+                                        </div>
+                                    </div>
+                                </div>
+    
+                                <div class="pro-services__gallery-item">
+                                    <img
+                                        class="pro-services__gallery-img" 
+                                        src="" 
+                                        alt="our work"
+                                    />
+    
+                                    <div class="pro-services__sub-info">
+                                        <div class="pro-services__company-info">Company</div>
+
+                                        <div class="pro-services__check">
+                                            <span>Check Service</span>
+                                            <img src="images/icons/common/white-arrow.svg" alt="arrow right" />
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="pro-services__gallery-item">
+                                    <img
+                                        class="pro-services__gallery-img"
+                                        src="" 
+                                        alt="our work"
+                                    />
+    
+                                    <div class="pro-services__sub-info">
+                                        <div class="pro-services__company-info">Company</div>
+
+                                        <div class="pro-services__check">
+                                            <span>Check Service</span>
+                                            <img src="images/icons/common/white-arrow.svg" alt="arrow right" />
+                                        </div>
+                                    </div>
+                                </div>
+    
+                                <div class="pro-services__gallery-item">
+                                    <img
+                                        class="pro-services__gallery-img"
+                                        src="" 
+                                        alt="our work"
+                                    />
+    
+                                    <div class="pro-services__sub-info">
+                                        <div class="pro-services__company-info">Company</div>
+
+                                        <div class="pro-services__check">
+                                            <span>Check Service</span>
+                                            <img src="images/icons/common/white-arrow.svg" alt="arrow right" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="pro-services__gallery-buttons">
+                                <button>
+                                    <img src="images/icons/common/arrow.svg" alt="arrow left"/>
+                                </button>
+
+                                <button>
+                                    <img src="images/icons/common/arrow.svg" alt="arrow right"/>
+                                </button>
+                            </div>
+                            
+                        </div>
+
+                        <div class="pro-services__selected-photo-wrap animated-content">
+                            <div class="pro-services__selected-photo" >
+                                <img
+                                    src="images/portfolio/modeling/1.jpg"
+                                    alt="our work"
+                                />
+                            </div>
+
+                            <div class="pro-services__selected-photo-buttons">
+                                <button>
+                                    <img src="images/icons/common/arrow.svg" alt="arrow left" />
+                                </button>
+                            
+                                <button>
+                                    <img src="images/icons/common/arrow.svg" alt="arrow right" />
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="tips">
+                <div class="tips__container">
+
+                    <div class="tips__main">
+                        <div class="tips__importance">
+                            <h3 class="tips__importance-title animated-content">
+                                Why are headshots important?
+                            </h3>
+
+                            <p class="tips__importance-text animated-content">
+                                It may not seem indispensable, but lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Donec nisi enim, finibus non malesuada vitae, porttitor vitae enim. Nulla eget fringilla libero, ut ultricies neque.
+                                Morbi id aliquet sem. Ut mattis diam sit amet orci faucibus dignissim. Aliquam erat volutpat. Curabitur eu efficitur quam.
+                            </p>
+
+                            <div class="tips__pointer animated-content">
+                                <img src="images/icons/useful-tips/pointer.svg" alt="pointer" />
+                            </div>
+                        </div>
+
+                        <div class="tips__list useful-tips">
+                            <h3 class="useful-tips__title animated-content">
+                                5 Useful Tips
+                            </h3>
+
+                            <div class="useful-tips__grid">
+                                <div class="useful-tips__item animated-content">
+                                    <div class="useful-tips__item-image">
+                                        <img src="images/icons/useful-tips/camera-icon.png" alt="camera"/>
+                                    </div>
+
+                                    <div class="useful-tips__item-text">
+                                        <p>Go professional, it’s worth it, because cheap looks cheap. </p>
+                                    </div>
+                                </div>
+
+                                <div class="useful-tips__item animated-content">
+                                    <div class="useful-tips__item-image">
+                                        <img src="images/icons/useful-tips/mirror-icon.png" alt="mirror"/>
+                                    </div>
+
+                                    <div class="useful-tips__item-text">
+                                        <p>Make sure it looks like you, not like you want to be.</p>
+                                    </div>
+                                </div>
+
+                                <div class="useful-tips__item animated-content">
+                                    <div class="useful-tips__item-image">
+                                        <img src="images/icons/useful-tips/eyes-icon.png" alt="eyes"/>
+                                    </div>
+
+                                    <div class="useful-tips__item-text">
+                                        <p>It’s all about the eyes and what’s behind them.</p>
+                                    </div>
+                                </div>
+
+                                <div class="useful-tips__item animated-content">
+                                    <div class="useful-tips__item-image">
+                                        <img src="images/icons/useful-tips/studio-icon.png" alt="studio"/>
+                                    </div>
+
+                                    <div class="useful-tips__item-text">
+                                        <p>Control framing, lighting & background.</p>
+                                    </div>
+                                </div>
+
+                                <div class="useful-tips__item animated-content">
+                                    <div class="useful-tips__item-image">
+                                        <img src="images/icons/useful-tips/tshirt-icon.png" alt="t-shirt"/>
+                                    </div>
+
+                                    <div class="useful-tips__item-text">
+                                        <p>Stay chill with clothing & makeup, you must be you.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tips__warning animated-content">
+                        <div class="tips__warning-info">
+                            <h3 class="tips__warning-title">
+                                Professional Headshot Services
+                            </h3>
+
+                            <p class="tips__warning-text">
+                                Studio Inc is maecenas vulputate, sem at auctor vulputate, elit nunc sagittis ligula,
+                                vitae pulvinar metus elit in ante. Aenean tincidunt erat ac ante placerat facilisis.
+                                Fusce sed ligula tortor. Quisque non dignissim erat. Vestibulum ante ipsum primis in
+                                faucibus.
+                            </p>
+
+                            <p class="tips__warning-text">
+                                Covid-19 Update: We are open for studio, office, and outdoor sessions. For more
+                                information on our safety procedures,
+                                visit <span class="tips__warning-underline">Studio Covid-19 Guidelines.</span>
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <section class="clients">
+                <div class="clients__container">
+
+                    <div class="clients__header">
+                        <h2 class="clients__title">Clients love us</h2>
+                        <h4 class="clients__sub-title">We have formed true friendships</h4>
+                    </div>
+
+                    <div class="clients__reviews animated-content clients__reviews--loading">
+                        <div class="clients-slider swiper">
+                            <div class="clients-slider__wrap swiper-wrapper">
+                            </div>
+                        </div>
+
+                        <div class="clients-slider__switch">
+                        </div>
+
+                        <div class="clients__loader">
+                            <div class="transition-loader">
+                                <div class="transition-loader-inner">
+                                    <label></label>
+                                    <label></label>
+                                    <label></label>
+                                    <label></label>
+                                    <label></label>
+                                    <label></label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="about-us">
+                <div class="about-us__container">
+                    <div class="about-us__text animated-content">
+                        <h2 class="about-us__title">Fast, convenient & friendly professional headshot sessions.</h2>
+                    </div>
+
+                    <div class="about-us__button animated-content">
+                        <button class="site-button">About Us</button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="blog">
+                <div class="blog__container">
+
+                    <div class="blog__header">
+                        <h3 class="blog__title">Our Blog</h3>
+                        <h4 class="blog__sub-header">Check our latest news</h4>
+                    </div>
+
+                    <div class="blog__posts animated-content">
+                        <article class="blog__post blog-post">
+                            <div class="blog-post__image">
+                                <img src="images/blog/1.jpg" alt="blog post picture">
+                            </div>
+
+                            <div class="blog-post__info">
+                                <h3 class="blog-post__title">all about headshots inside professional studios</h3>
+
+                                <div class="blog-post__sub-info">
+                                    <div class="blog-post__comments">
+                                        <img src="images/icons/common/comments.svg" alt="comments" class="blog-post__comments-icon">
+
+                                        <span class="blog-post__comments-count">
+                                            15 Comments
+                                        </span>
+                                    </div>
+
+                                    <div class="blog-post__date">
+                                        June, 2022
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="blog__post blog-post">
+                            <div class="blog-post__image">
+                                <img src="images/blog/2.jpg" alt="blog post picture">
+                            </div>
+
+                            <div class="blog-post__info">
+                                <h3 class="blog-post__title">
+                                    how do professionals edit
+                                    their photos and What photo editing software they use
+                                </h3>
+
+                                <div class="blog-post__sub-info">
+                                    <div class="blog-post__comments">
+                                        <img src="images/icons/common/comments.svg" alt="comments" class="blog-post__comments-icon">
+
+                                        <span class="blog-post__comments-count">
+                                            9 Comments
+                                        </span>
+                                    </div>
+
+                                    <div class="blog-post__date">
+                                        July, 2022
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="blog__post blog-post">
+                            <div class="blog-post__image">
+                                <img src="images/blog/3.jpg" alt="blog post picture">
+                            </div>
+
+                            <div class="blog-post__info">
+                                <h3 class="blog-post__title">best Courses In Photography from home</h3>
+
+                                <div class="blog-post__sub-info">
+                                    <div class="blog-post__comments">
+                                        <img src="images/icons/common/comments.svg" alt="comments" class="blog-post__comments-icon">
+
+                                        <span class="blog-post__comments-count">
+                                            17 Comments
+                                        </span>
+                                    </div>
+
+                                    <div class="blog-post__date">
+                                        September, 2021
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="blog__all-posts">
+                        <button class="site-button">
+                            See All Posts
+                        </button>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="footer__container">
+                <div class="footer__grid">
+
+                    <div class="footer__grid-item footer__logo">
+                        <img src="images/logos/white-logo.png" alt="studio logo" class="footer__logo-icon">
+                    </div>
+
+                    <div class="footer__grid-item footer__links">
+                        <h4 class="footer__title">Links</h4>
+
+                        <ul class="footer__links-list">
+                            <li>
+                                <a class="footer__link" href="#">
+                                    Individuals
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="footer__link" href="#">
+                                    Companies
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="footer__link" href="#">
+                                    The Studio
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="footer__link" href="#">
+                                    About Us
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a class="footer__link" href="#">
+                                    Blog
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__grid-item footer__resources">
+                        <h4 class="footer__title">Resources</h4>
+
+                        <ul class="footer__resources-list">
+                            <li class="footer__resources-item">
+                                <img src="images/icons/common/gray-arrow.svg" alt="arrow">
+                                <span class="footer__resources-item-txt">Lorem ipsum dolor sit amet, consectetur adipis.</span>
+                            </li>
+
+                            <li class="footer__resources-item">
+                                <img src="images/icons/common/gray-arrow.svg" alt="arrow">
+                                <span class="footer__resources-item-txt">Donec nisi enim, finibus non malesuada vitae.</span>
+                            </li>
+
+                            <li class="footer__resources-item">
+                                <img src="images/icons/common/gray-arrow.svg" alt="arrow">
+                                <span class="footer__resources-item-txt">Nulla eget fringilla libero, ut ultricies neque.</span>
+                            </li>
+
+                            <li class="footer__resources-item">
+                                <img src="images/icons/common/gray-arrow.svg" alt="arrow">
+                                <span class="footer__resources-item-txt">Morbi id aliquet sem. Ut mattis diam sit amet.</span>
+                            </li>
+
+                            <li class="footer__resources-item">
+                                <img src="images/icons/common/gray-arrow.svg" alt="arrow">
+                                <span class="footer__resources-item-txt">Curabitur eu efficitur quam. Fusce interdum sem.</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__grid-item footer__address">
+                        <h4 class="footer__title">Studio Inc</h4>
+
+                        <div class="footer__address-wrap">
+                            <img src="images/icons/common/geo.svg" alt="geo icon" class="footer__geo-icon">
+
+                            <div class="footer__address-text">
+                                <div class="footer__address-text-item">125 Southern Way</div>
+                                <div class="footer__address-text-item">EH23 1SZ</div>
+                                <div class="footer__address-text-item">North Middleton, UK</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="footer__grid-item footer__contacts">
+                        <h4 class="footer__title">Contact</h4>
+
+                        <div class="footer__contacts-wrap">
+                            <div class="footer__contacts-phone">(123) 345 3781</div>
+                            <div class="footer__contacts-email">smile@studio-inc.com</div>
+                        </div>
+                    </div>
+
+                    <div class="footer__grid-item footer__soc-nets">
+                        <ul class="footer__soc-nets-list">
+                            <li class="footer__soc-net-item">
+                                <a class="footer__soc-net-link" href="#">
+                                    Facebook
+                                </a>
+                            </li>
+
+                            <li class="footer__soc-net-item">
+                                <a class="footer__soc-net-link" href="#">
+                                    Instagram
+                                </a>
+                            </li>
+
+                            <li class="footer__soc-net-item">
+                                <a class="footer__soc-net-link" href="#">
+                                    Linkedin
+                                </a>
+                            </li>
+
+                            <li class="footer__soc-net-item">
+                                <a class="footer__soc-net-link" href="#">
+                                    Google Rating
+                                </a>
+                            </li>
+
+                            <li class="footer__soc-net-item">
+                                <a class="footer__soc-net-link" href="#">
+                                    Yelp
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="sub-footer">
+                <div class="sub-footer__container">
+                    <div class="sub-footer__rights">© 2021. All rights reserved.</div>
+
+                    <div class="sub-footer__privacy">Privacy Policy</div>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+    <!-- меню бургер для экранов <= 768px -->
+    <div class="burger-menu">
+        <nav class="burger-menu__nav">
+
+            <ul class="burger-menu__nav-list">
+                <li class="burger-menu__nav-item">
+                    <span class="burger-menu__nav-link" data-nav="individSessions">
+                        Individuals
+                    </span>
+                </li>
+
+                <li class="burger-menu__nav-item">
+                    <span class="burger-menu__nav-link" data-nav="companiesSessions">
+                        Companies
+                    </span>
+                </li>
+
+                <li class="burger-menu__nav-item">
+                    <span class="burger-menu__nav-link" data-nav="studiosLocations">
+                        The Studio
+                    </span>
+                </li>
+
+                <li class="burger-menu__nav-item">
+                    <span class="burger-menu__nav-link" data-nav="clients">
+                        About Us
+                    </span>
+                </li>
+
+                <li class="burger-menu__nav-item">
+                    <span class="burger-menu__nav-link" data-nav="blog">
+                        Blog
+                    </span>
+                </li>
+            </ul>
+
+        </nav>
+    </div>
+
+    <script 
+        src="https://api-maps.yandex.ru/2.1/?apikey=ad341b6b-515e-4cd1-8329-7ad016422ad0&lang=ru_RU" 
+        type="text/javascript">
+    </script>
+    <script src="lib/swiper/swiper-bundle.min.js"></script>
+    <script src="lib/rellax/rellax.min.js"></script>
+
+    <script src="js/index.js"></script>
+    <script src="js/studioSearch.js"></script>
+    <script src="js/proServices.js"></script>
+    <script src="js/clients.js"></script>
+</body>
+</html>
